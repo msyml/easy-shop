@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="sex">
+        <item>男</item>
+        <item>女 </item>
+        <item>未知</item>
+    </string-array>
+    <string-array name="search">
+        <item>商品</item>
+        <item>店铺</item>
+    </string-array>
+</resources>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.chen.kechensj">
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <application
+        android:name=".application.MyApplication"
+        android:allowBackup="true"
+        android:icon="@mipmap/appimage"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/appimage"
+        android:supportsRtl="true"
+        android:theme="@style/TranslucentTheme">
+        <activity android:name=".activity.MainActivity" />
+        <activity android:name=".activity.LoginActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.HelpActivity" />
+        <activity android:name=".activity.RegisterActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.ForgetPWActivity" />
+        <activity android:name=".activity.SetUserInforActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.SplashActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activity.PersonSetActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.OrderActivity" />
+        <activity android:name=".activity.CollectActivity" />
+        <activity android:name=".activity.AddressActivity" />
+        <activity android:name=".activity.HistoryActivity" />
+        <activity android:name=".activity.StoreActivity" />
+        <activity android:name=".activity.UpdatePWActivity" />
+        <activity android:name=".activity.UserInforActivity" />
+        <activity android:name=".activity.SearchActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.CommodityListActivity" />
+        <activity android:name=".activity.AddAddressActivity"
+            android:windowSoftInputMode="adjustResize|stateHidden"/>
+        <activity android:name=".activity.MyOrderActivity"/>
+    </application>
+
+</manifest>

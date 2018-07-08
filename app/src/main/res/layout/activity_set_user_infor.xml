@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/login_padding"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.SetUserInforActivity">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/login_back"
+        android:layout_height="@dimen/login_back"
+        android:src="@mipmap/login_back" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="@dimen/login_back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/login_right"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/login_right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_toEndOf="@id/back"
+        android:layout_toRightOf="@id/back"
+        android:text="@string/suiTitle"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/regiTitle" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:maxLength="25"
+        android:layout_below="@id/back"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginTop="@dimen/dp64"
+        android:layout_toEndOf="@id/pwCheckBox"
+        android:layout_toRightOf="@id/pwCheckBox"
+        android:background="@null"
+        android:hint="@string/suiAccount"
+        android:inputType="text"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/account"
+        android:background="@color/menuCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/account"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="@string/suiAHint"/>
+
+    <CheckBox
+        android:id="@+id/pwCheckBox"
+        style="@style/PwCheckBox"
+        android:layout_width="@dimen/loginCheckBox"
+        android:layout_height="@dimen/loginCheckBox"
+        android:layout_alignBottom="@id/password"
+        android:layout_marginBottom="@dimen/dp4" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:layout_below="@id/account"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginTop="@dimen/dp64"
+        android:maxLength="20"
+        android:layout_toEndOf="@id/pwCheckBox"
+        android:layout_toRightOf="@id/pwCheckBox"
+        android:background="@null"
+        android:hint="@string/suiPW"
+        android:inputType="textPassword"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/password"
+        android:background="@color/menuCenter" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/password"
+        android:layout_marginTop="@dimen/dp8"
+        android:text="@string/suiPWHint"/>
+
+
+
+    <TextView
+        android:id="@+id/next"
+        android:layout_width="match_parent"
+        android:clickable="false"
+        android:layout_height="@dimen/loginLogin"
+        android:layout_below="@id/pwCheckBox"
+        android:layout_marginTop="@dimen/dp64"
+        android:background="@drawable/shape_login_false"
+        android:gravity="center"
+        android:text="@string/suiNext"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_right" />
+
+</RelativeLayout>

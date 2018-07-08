@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/shape_menu_background">
+
+    <RadioGroup
+        android:id="@+id/main_radiogroup"
+        android:background="@color/white"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/main_rbtn_home"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:checked="true"
+            android:textSize="@dimen/main_rb_size"
+            android:drawableTop="@drawable/selector_main_home"
+            android:button="@null"
+            android:textColor="@color/main_text_color"
+            android:gravity="center"
+            android:text="@string/main_main" />
+
+        <RadioButton
+            android:id="@+id/main_rbtn_shoppingcar"
+            android:layout_width="0dp"
+            android:textColor="@color/main_text_color"
+            android:drawableTop="@drawable/selector_main_shopcart"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:button="@null"
+            android:textSize="@dimen/main_rb_size"
+            android:text="@string/main_shopcart" />
+
+        <RadioButton
+            android:textColor="@color/main_text_color"
+            android:id="@+id/main_rbtn_personal"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:drawableTop="@drawable/selector_main_person"
+            android:textSize="@dimen/main_rb_size"
+            android:layout_weight="1"
+            android:button="@null"
+            android:gravity="center"
+            android:text="@string/main_person" />
+    </RadioGroup>
+
+    <FrameLayout
+        android:id="@+id/main_frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@id/main_radiogroup">
+
+    </FrameLayout>
+
+</RelativeLayout>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <!-- 系统默认的背景色 -->
+    <color name="colorbackground">#FAFAFA</color>
+    <!-- 菜单栏渐变色的开始色、结束色与中间色 -->
+    <color name="menu_start">#33BAFA</color>
+    <color name="menu_end">#4F8FFC</color>
+    <color name="menuCenter">#42A5FB</color>
+    <!-- 以bt开头的是一个颜色的半透明 -->
+    <color name="bt_menu_start">#8033BAFA</color>
+    <color name="bt_menu_end">#804F8FFC</color>
+    <color name="bt_menu_center">#8042A5FB</color>
+    <!-- 购物车用色 -->
+    <color name="shopcart_back">#F8F8F8</color>
+    <!-- view的用色 -->
+    <color name="colorview">#F5F5F5</color>
+    <color name="sendCode">#F0F0F0</color>
+    <color name="sendCod">#FAFAFA</color>
+    <color name="PSBack">#EEEEEE</color>
+    <color name="PSMenu">#F9F9F9</color>
+</resources>

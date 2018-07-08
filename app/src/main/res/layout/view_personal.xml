@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <!-- 顶部有渐变色梯形的一块 -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="224dp"
+        android:background="@mipmap/person_background">
+
+        <!-- 这个view的标题 -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/perTitle"
+            android:textColor="@color/white"
+            android:textSize="24sp" />
+
+        <!-- 个人头像 -->
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/person_touxiang"
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="12dp"
+            android:layout_marginRight="24dp"
+            android:src="@mipmap/appimage"
+            app:civ_border_color="#88FFFFFF"
+            app:civ_border_width="2dp" />
+
+        <!-- 个人设置 -->
+        <ImageView
+            android:id="@+id/person_set"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="8dp"
+            android:layout_marginTop="@dimen/dp4"
+            android:src="@mipmap/person_set" />
+
+        <!-- 用户名 -->
+        <TextView
+            android:id="@+id/person_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/person_touxiang"
+            android:layout_marginLeft="16dp"
+            android:ellipsize="end"
+            android:maxLength="8"
+            android:textColor="@color/white"
+            android:textSize="36sp" />
+
+        <!-- 二维码页面 -->
+        <ImageView
+            android:id="@+id/person_qr_code"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_alignBottom="@id/person_name"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="@dimen/dp4"
+            android:layout_marginStart="@dimen/dp4"
+            android:layout_toRightOf="@id/person_name"
+            android:src="@mipmap/person_qr_code" />
+
+        <!-- UID这个是死的 -->
+        <TextView
+            android:id="@+id/person_dw_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/person_name"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="12dp"
+            android:text="UID:"
+            android:textColor="@color/white" />
+
+        <!-- 活的UID,根据注册顺序 -->
+        <TextView
+            android:id="@+id/person_uid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/person_dw_uid"
+            android:layout_marginLeft="2dp"
+            android:layout_toRightOf="@id/person_dw_uid"
+            android:text="1"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+    <!-- 下半部分 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:paddingLeft="16dp">
+
+        <!-- 订单 -->
+        <TextView
+            android:id="@+id/person_indent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/person_indent"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perDingdan"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+
+        <!-- 收藏 -->
+        <TextView
+            android:id="@+id/person_collect"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_textview_pt"
+            android:drawableLeft="@mipmap/person_collect"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perCollect"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+
+        <!-- 收货地址 -->
+        <TextView
+            android:id="@+id/person_address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_textview_pt"
+            android:drawableLeft="@mipmap/person_address"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perDizhi"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+
+        <TextView
+            android:id="@+id/person_history"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_textview_pt"
+            android:drawableLeft="@mipmap/history"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perHistory"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+
+        <TextView
+            android:id="@+id/person_store"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dp48"
+            android:drawableLeft="@mipmap/store"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perStore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+
+        <TextView
+            android:id="@+id/person_more"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/person_textview_pt"
+            android:drawableLeft="@mipmap/more"
+            android:drawablePadding="@dimen/person_drawablepadding"
+            android:gravity="center_vertical"
+            android:text="@string/perMore"
+            android:textColor="@color/black"
+            android:textSize="@dimen/person_option_textsize" />
+
+        <!-- View -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginLeft="@dimen/person_view_pl"
+            android:layout_marginTop="@dimen/person_view_pt"
+            android:background="@color/colorview" />
+    </LinearLayout>
+</LinearLayout>

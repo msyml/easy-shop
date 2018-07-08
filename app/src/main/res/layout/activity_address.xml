@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PSBack"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.AddressActivity">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/colorbackground">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/addTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp36"
+            android:layout_height="@dimen/dp36"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/dp8"
+            android:padding="@dimen/dp4"
+            android:src="@mipmap/login_back" />
+    </RelativeLayout>
+
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/smartRefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/top">
+
+        <ListView
+            android:id="@+id/addList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:divider="@color/PSBack"
+            android:dividerHeight="@dimen/dp16" />
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+
+    <TextView
+        android:id="@+id/createNew"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dp16"
+        android:layout_marginLeft="@dimen/dp36"
+        android:layout_marginRight="@dimen/dp36"
+        android:background="@drawable/shape_menu_radio"
+        android:gravity="center"
+        android:text="@string/addBtn"
+        android:textColor="@color/white"
+        android:textSize="@dimen/sp18" />
+
+</RelativeLayout>

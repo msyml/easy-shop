@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:layout_margin="@dimen/login_padding">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/login_back"
+        android:layout_height="@dimen/login_back"
+        android:src="@mipmap/login_back" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="@dimen/login_back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/login_right"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/login_right" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/image"
+        android:layout_width="@dimen/loginImage"
+        android:layout_height="@dimen/loginImage"
+        android:layout_below="@id/back"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/login_back"
+        android:src="@mipmap/appimage" />
+
+    <EditText
+        android:id="@+id/account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:layout_below="@id/image"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginTop="@dimen/loginEditMT"
+        android:layout_toEndOf="@id/pwCheckBox"
+        android:layout_toLeftOf="@id/cleanPassword"
+        android:layout_toRightOf="@id/pwCheckBox"
+        android:layout_toStartOf="@id/cleanPassword"
+        android:background="@null"
+        android:hint="@string/loginAccount"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/account"
+        android:background="@color/menuCenter" />
+
+    <ImageView
+        android:id="@+id/cleanAccount"
+        android:layout_width="@dimen/loginClean"
+        android:layout_height="@dimen/loginClean"
+        android:layout_alignBottom="@id/account"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp4"
+        android:src="@mipmap/clean"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:layout_below="@id/account"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginTop="@dimen/loginEditMT"
+        android:layout_toEndOf="@id/pwCheckBox"
+        android:layout_toLeftOf="@id/cleanPassword"
+        android:layout_toRightOf="@id/pwCheckBox"
+        android:inputType="textPassword"
+        android:layout_toStartOf="@id/cleanPassword"
+        android:background="@null"
+        android:hint="@string/loginPassword"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/password"
+        android:background="@color/menuCenter" />
+
+    <ImageView
+        android:id="@+id/cleanPassword"
+        android:layout_width="@dimen/loginClean"
+        android:layout_height="@dimen/loginClean"
+        android:layout_alignBottom="@id/password"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp4"
+        android:src="@mipmap/clean"
+        android:visibility="invisible" />
+
+    <CheckBox
+        android:id="@+id/pwCheckBox"
+        style="@style/PwCheckBox"
+        android:layout_width="@dimen/loginCheckBox"
+        android:layout_height="@dimen/loginCheckBox"
+        android:layout_alignBottom="@id/password"
+        android:layout_marginBottom="@dimen/dp4" />
+
+    <TextView
+        android:id="@+id/login"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginLogin"
+        android:layout_below="@id/pwCheckBox"
+        android:layout_marginTop="@dimen/dp48"
+        android:background="@drawable/shape_login_false"
+        android:gravity="center"
+        android:text="@string/loginLogin"
+        android:clickable="false"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_right" />
+
+    <TextView
+        android:id="@+id/setpw"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/login"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="@string/loginSetpw"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/loginBottom" />
+
+    <TextView
+        android:id="@+id/rigister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/login"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="@string/loginRegi"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/loginBottom" />
+</RelativeLayout>

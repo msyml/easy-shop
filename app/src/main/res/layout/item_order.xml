@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorbackground"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/item_shopcart_header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <View
+            android:id="@+id/view"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/iSC_10dp"
+            android:background="@color/shopcart_back" />
+
+        <TextView
+            android:id="@+id/item_shopcart_shopname"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@mipmap/shopcart_shop"
+            android:drawablePadding="@dimen/iSC_5dp"
+            android:padding="@dimen/iSC_10dp"
+            android:text="测试文字"
+            android:textColor="@color/black" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorview"
+        android:gravity="center_vertical">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/iSC_1dp"
+                android:background="@color/shopcart_back" />
+
+            <ImageView
+                android:id="@+id/commodity_image"
+                android:layout_width="@dimen/dp96"
+                android:layout_height="@dimen/dp96"
+                android:layout_marginBottom="@dimen/dp8"
+                android:layout_marginLeft="@dimen/dp12"
+                android:layout_marginTop="@dimen/dp8"
+                android:padding="@dimen/dp2"
+                android:src="@mipmap/appimage" />
+
+            <TextView
+                android:id="@+id/commodity_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/commodity_image"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_marginRight="@dimen/dp8"
+                android:layout_toRightOf="@id/commodity_image"
+                android:maxLines="2"
+                android:text="这些懂事测试发哦佛钮司哦啊的归纳死欧诺个手动哦给你欧舒丹"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/commodity_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/commodity_image"
+                android:layout_marginLeft="@dimen/dp16"
+                android:layout_toRightOf="@id/commodity_image"
+                android:text="$123"
+                android:textColor="@color/menuCenter"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/commodity_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/commodity_price"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dp8"
+                android:text="x1"
+                android:textColor="@color/black"
+                android:textSize="@dimen/sp16" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/iSC_1dp"
+        android:background="@color/shopcart_back" />
+
+</LinearLayout>

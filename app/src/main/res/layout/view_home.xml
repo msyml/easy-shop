@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorview"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tosearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@drawable/shape_menu_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18"
+            android:background="@null"
+            android:text="@string/mainSearch" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp8"
+            android:src="@mipmap/search_white" />
+    </LinearLayout>
+
+    <com.example.chen.kechensj.view.NestedScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:descendantFocusability="blocksDescendants"
+            android:orientation="vertical">
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dp160" />
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/recycler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@id/banner" />
+
+        </RelativeLayout>
+    </com.example.chen.kechensj.view.NestedScrollView>
+
+
+</LinearLayout>

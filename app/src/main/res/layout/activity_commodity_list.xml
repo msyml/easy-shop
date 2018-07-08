@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    android:background="@drawable/shape_menu_background"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/tosearch"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@drawable/shape_menu_background"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="7"
+            android:background="@null"
+            android:gravity="center"
+            android:text="@string/mainSearch"
+            android:textColor="@color/white"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/dp8"
+            android:src="@mipmap/search_white" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorview"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/recycler"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <ImageView
+            android:layout_marginTop="@dimen/dp16"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp24"
+            android:src="@mipmap/end"/>
+    </LinearLayout>
+
+</LinearLayout>

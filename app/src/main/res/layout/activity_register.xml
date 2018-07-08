@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/login_padding"
+    android:fitsSystemWindows="true">
+
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="@dimen/login_back"
+        android:layout_height="@dimen/login_back"
+        android:src="@mipmap/login_back" />
+
+    <TextView
+        android:id="@+id/help"
+        android:layout_width="@dimen/login_text_width"
+        android:layout_height="@dimen/login_back"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:gravity="center"
+        android:text="@string/login_right"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/login_right" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp24"
+        android:layout_marginLeft="@dimen/dp24"
+        android:layout_toEndOf="@id/back"
+        android:layout_toRightOf="@id/back"
+        android:text="@string/regiTitle"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/regiTitle" />
+
+    <TextView
+        android:id="@+id/country"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/back"
+        android:layout_marginTop="@dimen/dp48"
+        android:text="@string/regiCountry"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/country"
+        android:layout_toStartOf="@id/next"
+        android:layout_toLeftOf="@id/next"
+        android:text="@string/regiNumber"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp16" />
+
+    <ImageView
+        android:id="@+id/next"
+        android:layout_width="@dimen/dp24"
+        android:layout_height="@dimen/dp20"
+        android:layout_alignBottom="@id/country"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:src="@mipmap/next" />
+
+    <EditText
+        android:id="@+id/phoneNumber"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:layout_below="@id/country"
+        android:layout_marginTop="@dimen/dp36"
+        android:background="@null"
+        android:inputType="phone"
+        android:maxLength="13"
+        android:hint="@string/regiPhone"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginTop="@dimen/dp4"
+        android:background="@color/menuCenter" />
+
+    <ImageView
+        android:id="@+id/cleanPhone"
+        android:layout_width="@dimen/loginClean"
+        android:layout_height="@dimen/loginClean"
+        android:layout_alignBottom="@id/phoneNumber"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="@dimen/dp4"
+        android:src="@mipmap/clean"
+        android:visibility="invisible" />
+
+    <EditText
+        android:id="@+id/code"
+        android:inputType="number"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginEdit"
+        android:layout_below="@id/phoneNumber"
+        android:layout_marginLeft="@dimen/dp4"
+        android:layout_toLeftOf="@id/sendCode"
+        android:layout_toStartOf="@id/sendCode"
+        android:layout_marginStart="@dimen/dp4"
+        android:layout_marginTop="@dimen/dp24"
+        android:background="@null"
+        android:maxLength="6"
+        android:hint="@string/regiCode"
+        android:textCursorDrawable="@color/menuCenter" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginViewHeight"
+        android:layout_below="@id/code"
+        android:layout_marginTop="@dimen/dp4"
+        android:background="@color/menuCenter" />
+
+    <TextView
+        android:id="@+id/sendCode"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="@string/regiFCode"
+        android:layout_alignBottom="@id/code"
+        android:clickable="false"
+        android:layout_alignParentRight="true"
+        android:textColor="@color/bt_menu_center"
+        android:layout_alignParentEnd="true"
+        android:textSize="@dimen/sp16"
+        android:background="@drawable/shape_sendcode_false"
+        android:layout_marginBottom="@dimen/dp4"/>
+
+    <TextView
+        android:id="@+id/toNext"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/loginLogin"
+        android:layout_below="@id/code"
+        android:layout_marginTop="@dimen/dp48"
+        android:background="@drawable/shape_login_false"
+        android:clickable="false"
+        android:gravity="center"
+        android:text="@string/regiNext"
+        android:textColor="@color/colorWhite"
+        android:textSize="@dimen/login_right" />
+
+
+</RelativeLayout>

@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/PSBack"
+    android:fitsSystemWindows="true"
+    android:orientation="vertical"
+    tools:context=".activity.PersonSetActivity">
+
+    <LinearLayout
+        android:id="@+id/title"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp64"
+        android:background="@color/PSMenu"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp36"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/dp16"
+            android:src="@mipmap/login_back" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp24"
+            android:layout_marginStart="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiTitle"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp20" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiUid"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/uiUid"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiAccount"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/uiAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setSex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiSex"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/sexNext"
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:src="@mipmap/next" />
+
+        <TextView
+            android:id="@+id/uiSex"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp4"
+            android:layout_toLeftOf="@id/sexNext"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/setBirth"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiBirth"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <ImageView
+            android:id="@+id/sexBirth"
+            android:layout_width="@dimen/dp24"
+            android:layout_height="@dimen/dp24"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:src="@mipmap/next" />
+
+        <TextView
+            android:id="@+id/uiBirth"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/dp4"
+            android:layout_toLeftOf="@id/sexBirth"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiSum"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/uiSum"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp48"
+        android:layout_marginTop="@dimen/dp2"
+        android:background="@color/white">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/dp16"
+            android:gravity="center"
+            android:text="@string/uiRegister"
+            android:textColor="@color/black"
+            android:textSize="@dimen/sp18" />
+
+        <TextView
+            android:id="@+id/uiRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dp16"
+            android:gravity="center"
+            android:textSize="@dimen/sp16" />
+    </RelativeLayout>
+
+
+</LinearLayout>

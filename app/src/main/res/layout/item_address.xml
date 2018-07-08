@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="wrap_content">
+
+    <View
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:background="@color/black" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp24"
+        android:layout_below="@id/top"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:text="测试文字"
+        android:textColor="@color/black"
+        android:textSize="@dimen/sp16" />
+
+    <TextView
+        android:id="@+id/number"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp24"
+        android:layout_alignBottom="@id/name"
+        android:layout_marginLeft="@dimen/dp36"
+        android:layout_toRightOf="@id/name"
+        android:text="18858713997"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:maxLines="2" />
+
+    <View
+        android:id="@+id/centerView"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@id/address"
+        android:layout_marginLeft="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp24"
+        android:background="@color/black" />
+
+    <LinearLayout
+        android:id="@+id/listDelete"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp36"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/centerView"
+        android:layout_marginRight="@dimen/dp16"
+        android:layout_marginTop="@dimen/dp16">
+        <ImageView
+            android:layout_width="@dimen/dp36"
+            android:layout_height="@dimen/dp36"
+            android:padding="@dimen/dp4"
+            android:src="@mipmap/addressdelete"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="删除"/>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/listUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dp36"
+        android:orientation="horizontal"
+        android:layout_alignBottom="@id/listDelete"
+        android:layout_marginRight="@dimen/dp24"
+        android:layout_toLeftOf="@id/listDelete"
+        android:text="编辑" >
+        <ImageView
+            android:layout_width="@dimen/dp36"
+            android:layout_height="@dimen/dp36"
+            android:padding="@dimen/dp4"
+            android:src="@mipmap/edit"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:textColor="@color/black"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="编辑"/>
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dp1"
+        android:layout_below="@id/listDelete"
+        android:layout_marginTop="@dimen/dp16"
+        android:background="@color/black" />
+
+</RelativeLayout>
